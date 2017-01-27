@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message test {
+    message item {
+        required int32 id = 1;
+        required string name = 2;
+    }
+
+    repeated item item = 1;
+    required int32 state = 2;
+}
