@@ -9,6 +9,10 @@
   },
   "author": "Bishesh Tiwaree <bishesh.tiwaree@trivago.com>",
   "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trivago/pbf-loader"
+  },
   "dependencies": {
     "pbf": "^3.0.5",
     "protocol-buffers-schema": "^3.1.1",

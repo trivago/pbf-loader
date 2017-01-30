@@ -5,6 +5,12 @@ Webpack loader for .proto files
 - uses [protocol-buffers-schema](https://github.com/mafintosh/protocol-buffers-schema) as schema parser
 - returns a compiled module ready to be used when you `require('./file.proto')`
 
+Installation
+------------
+```sh
+npm install pbf-loader
+```
+
 Usage
 ------
 
@@ -13,14 +19,12 @@ see [example](./example/) for sample implementation.
 
 Given your ```webpack.config.js``` like this:
 ```javascript
-const pbfLoader = path.resolve(__dirname, "../src/index.js");
-
 module.exports = {
     module: {
         loaders: [
             {
                 test: /\.proto$/,
-                loader: pbfLoader
+                loader: "pbf-loader"
             }
         ]
     }
@@ -56,14 +60,12 @@ const buffer = pbf.finish();
 ```
 You can refer to [index.proto](./example/index.proto) for how the .proto file looks like.
 
-
 Test
 ----
 Assuming you already did `npm install`, you can:
-```bash
+```sh
 npm test
 ```
-
 
 ## License
 This project is released under the terms of the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
