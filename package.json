@@ -1,6 +1,6 @@
 {
   "name": "pbf-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack loader for .proto file to be used within mapbox/pbf",
   "main": "src/index.js",
   "scripts": {
