@@ -1,7 +1,6 @@
 "use strict";
 
 var path = require("path");
-var protoLoader = path.resolve(__dirname, "../src/index.js");
 
 module.exports = {
     entry: path.resolve(__dirname, "./index.js"),
@@ -13,7 +12,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.proto$/,
-                loader: protoLoader
+                loader: "pbf-loader"
             }
         ]
     }
