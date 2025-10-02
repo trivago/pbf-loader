@@ -1,6 +1,10 @@
 Webpack loader for .proto files
 ===============================
 
+> [!CAUTION]
+> This repository has been archived as of October 2025.  
+> If you wish to update or extend this project, please create a fork.
+
 - to be used along with [mapbox/pbf](https://github.com/mapbox/pbf)
 - uses [protocol-buffers-schema](https://github.com/mafintosh/protocol-buffers-schema) as schema parser
 - returns a compiled module ready to be used when you `require('./file.proto')`
